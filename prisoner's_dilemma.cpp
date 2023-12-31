@@ -5,12 +5,15 @@ using namespace std;
 
 int main() {
     string player1, player2, play;
-    int p1point = 0, p2point = 0, ground = 0, rounds;
+    int p1point, p2point, ground = 0, rounds;
 
     cout << "Press 'y' to play prisoner's dilemma" << endl;
     cin >> play;
 
     while (play == "y" || play == "Y") {
+            p1point = 0;
+            p2point = 0;
+
             cout << "how many rounds long do you want it to be" << endl;
             int round = 1;
     cin >> rounds;
